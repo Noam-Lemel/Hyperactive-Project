@@ -7,6 +7,16 @@ html {
   font-size: 16px;
 }
 
+input:user-invalid {
+  border-color: #ff0000 !important;
+}
+input:user-invalid::placeholder {
+  color: #ff0000;
+}
+input::placeholder {
+  color: transparent;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -1122,6 +1132,11 @@ button[type=submit] {
   align-items: center;
   gap: 2rem;
   white-space: nowrap;
+}
+.modals-background .form-modal input::placeholder {
+  color: #999 !important;
+}
+.modals-background .form-modal {
   background: url("https://www.hyperactive.co.il/static/media/modal-bg.76e0ddc9.jpg");
   background-size: cover;
   background-position: center;

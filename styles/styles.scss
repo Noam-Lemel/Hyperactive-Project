@@ -8,6 +8,13 @@ html{
     font-family: "Assistant",sans-serif;
     font-size: 16px;
 }
+input{
+    &:user-invalid{
+        border-color: #ff0000 !important;
+        &::placeholder{color: #ff0000;}
+    }
+    &::placeholder{color: transparent;}
+}
 body{
     margin:0;
     min-height: 100vh;
@@ -1053,6 +1060,9 @@ body{
         align-items: center;
         gap: 2rem;
         white-space: nowrap;
+        input::placeholder{
+                    color: #999 !important;
+                }
 
         background:url('https://www.hyperactive.co.il/static/media/modal-bg.76e0ddc9.jpg');
         background-size: cover;
@@ -1092,7 +1102,6 @@ body{
                 padding: 12px 15px;
                 border: 1px solid #ccc;
                 border-radius: 4px;
-
             }
             .checkbox-container{
                 width:80%;
