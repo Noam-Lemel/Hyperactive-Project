@@ -568,6 +568,7 @@ body{
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr;
         }
+        @media(min-width: 950px){box-shadow: 0 8px 15px -5px rgba(0, 0, 0, 0.15);}
     }
 }
 .about-section{
@@ -780,7 +781,7 @@ body{
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: auto;
             gap: 10px;
-            width: 80%;
+            width: 75%;
         }
     }
     
