@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
-  font-family: "Assistant", sans-serif;
 }
 
 html {
+  font-family: "Assistant", sans-serif;
   font-size: 16px;
 }
 
@@ -529,7 +529,7 @@ body img {
   text-decoration: underline;
   font-size: 0.8rem;
 }
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   .main .sections-container .first-section .form-container {
     display: none;
   }
