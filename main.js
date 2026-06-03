@@ -18,6 +18,10 @@ const accessibilityBtns=document.querySelectorAll('.accessibility-btn');
 const privecyModal=document.querySelector('.privacy-modal');
 const accessibilityModal=document.querySelector('.accessibility-modal');
 
+window.addEventListener('load',()=>{
+    modalsbackground.classList.remove('none');
+})
+
 humburgerBtn.addEventListener('click',()=>{
         headerNav.classList.toggle('isOpen');
         humburgerBtn.classList.toggle('isOpen');
