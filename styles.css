@@ -1277,7 +1277,3 @@ button[type=submit] {
 .none {
   display: none !important;
 }
-
-.isLock {
-  overflow: hidden;
-}
