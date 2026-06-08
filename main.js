@@ -62,10 +62,6 @@ careerItem.addEventListener('click',(event)=>{
         event.preventDefault();
         careerItem.classList.toggle('isDropdownOpen');
 });
-humburgerBtn.addEventListener('click',()=>{
-    headernav.classList.toggle('isOpen');
-    humburgerBtn.classList.toggle('isOpen');
-})
 for(let i=0;i<privacyBtns.length;i++){
     privacyBtns[i].addEventListener('click',()=>{
         privecyModal.classList.remove('none');
