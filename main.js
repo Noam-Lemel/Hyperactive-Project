@@ -46,6 +46,11 @@ for(let i=0;i<exitButtons.length;i++){
 for(let i=0;i<forms.length;i++){
     forms[i].addEventListener('submit',(event)=>{
         event.preventDefault();
+        const name=forms[i].querySelector['input[name="name"]'];
+        const tel=forms[i].querySelector['input[name="phone-number"]'];
+        const mail=forms[i].querySelector['input[name="email"]'];
+        if(name.value.trim().length<2||tel.value.length<9)
+            return;
         if(!formModal.classList.contains('none'))
             formModal.classList.add('none');
         modalsbackground.classList.remove('none');
